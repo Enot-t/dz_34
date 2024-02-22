@@ -1,0 +1,42 @@
+CREATE TABLE IF NOT EXISTS Films(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	title TEXT NOT NULL,
+	release_date DATE NOT NULL,
+	genre TEXT NOT NULL,
+	duration INTEGER NOT NULL
+);
+
+/*INSERT INTO Films(title, release_date, genre, duration) VALUES ("Solaris", "1972-02-05", "Science fiction", 166);
+INSERT INTO Films(title, release_date, genre, duration) VALUES ("Gladiator", "2000-05-01", "Historical drama", 155);
+INSERT INTO Films(title, release_date, genre, duration) VALUES ("Star Trek: The Motion Picture", "1979-12-07", "Science fiction", 132);
+INSERT INTO Films(title, release_date, genre, duration) VALUES ("Wasabi", "2001-10-31", "action-film", 94);
+INSERT INTO Films(title, release_date, genre, duration) VALUES ("The Silence of the Lambs", "1991-02-14", "triller", 118); 
+INSERT INTO Films(title, release_date, genre, duration) VALUES ("Barbie", "2023-07-21", "comedy", 114);*/
+
+/*●	Получить список всех фильмов вместе с их названиями, датами выхода и жанрами.
+SELECT * from Films*/
+
+/*●	Найти фильмы, вышедшие после 2010 года.
+SELECT * from Films
+Where release_date > "2009-12-31"*/
+
+/*●	Получить список фильмов жанра "Фантастика".
+SELECT * FROM Films
+WHERE genre = "Science fiction"*/
+
+/*●	Найти фильмы с длительностью более 150 минут.
+SELECT * FROM Films
+Where duration > 150*/
+
+/*●	Получить список фильмов, названия которых начинаются на букву "В".
+SELECT * FROM Films
+WHERE title like "B%"*/
+
+/*●	Найти фильмы жанра "Боевик", вышедшие до 2005 года.
+SELECT * FROM Films
+WHERE genre = "action-film"
+AND release_date < "2005-01-01"*/
+
+/*●	Найти фильмы с длительностью менее 120 минут.*/
+SELECT * FROM Films
+WHERE duration < 120
