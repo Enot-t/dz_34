@@ -1,0 +1,45 @@
+CREATE TABLE IF NOT EXISTS Albums(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	title TEXT NOT NULL,
+	artist TEXT NOT NULL,
+	release_date date NOT NULL,
+	genre TEXT NOT NULL
+	);
+
+/*INSERT INTO Albums(title, artist, release_date, genre) VALUES ("Blackstar", "David Bowie", "2016-01-08", "art-rock");
+INSERT INTO Albums(title, artist, release_date, genre) VALUES ("Rosenrot", "Rammstein", "2005-10-28", "industrial metal");
+INSERT INTO Albums(title, artist, release_date, genre) VALUES ("Yellow Submarine", "The Beatles", "1969-01-17", "Rock");
+INSERT INTO Albums(title, artist, release_date, genre) VALUES ("The Slim Shady LP", "Eminem", "1999-02-23", "Hip-Hop");
+INSERT INTO Albums(title, artist, release_date, genre) VALUES ("Thriller", "Michael Jackson", "1982-11-29", "Pop"); 
+INSERT INTO Albums (title, artist, release_date, genre) VALUES ("Sticky Fingers", "The Rolling Stones", "1971-04-23", "Rock");
+INSERT INTO Albums(title, artist, release_date, genre) VALUES ("Invincible", "Michael Jackson", "2001-10-30", "Pop");*/
+
+/*●	Получить список всех альбомов вместе с их названиями, исполнителями, датами выпуска и жанрами.
+SELECT * from Albums */
+
+/*●	Найти альбомы, выпущенные после 2015 года.
+SELECT * from Albums
+WHERE release_date > "2014-12-31"*/
+
+/*●	Получить список альбомов жанра "Рок".
+SELECT * from Albums
+WHERE genre = "Rock"*/
+
+/*●	Найти альбомы с названием, начинающимся на букву "S".
+SELECT * from Albums
+WHERE title LIKE "S%"*/
+
+/*●	Получить список альбомов, исполнителями которых являются "The Beatles".
+SELECT * from Albums
+WHERE artist = "The Beatles"*/
+
+/*●	Найти альбомы жанра "Хип-хоп", выпущенные до 2010 года.
+SELECT * from Albums
+Where genre = "Hip-Hop" 
+AND release_date < "2010-01-01"*/
+
+
+/*●	Найти альбомы с датой выпуска после 2000 года и жанром "Поп".
+SELECT * from Albums
+WHERE genre = "Pop"
+AND release_date > "1999-12-31"*/
